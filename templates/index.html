@@ -1,0 +1,51 @@
+{% load static %}
+<html>
+    <head>
+        <title>hello</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+<body>
+    
+<div id="container">
+    <div class="login-box">
+        <h1>SALARY PREDICTION</h1>
+        <h2>Simple Linear Regression</h2>
+        <form action="calculate">
+            <div class="user-box">
+                <input type="text" name="exp" value="{{exp}}" required="">
+                <label>Experience</label>
+             input type="submit" name="submit" value="predict" class="submitbtn" />
+        </form><br>
+        <h2>SALARY : {{predicted}}</h2>
+    </div>
+
+	<div id="logo">
+			</div>
+	<div id="continput">
+            </body>
+</html>
+
+<!--{% load static %}
+
+<html>
+    <head>
+        <title>hello</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+
+<body>
+    <div class="login-box">
+        <h1>SALARY</h1>
+        <h2>Simple Linear Regression</h2>
+        <form action="calculate">
+            <div class="user-box">
+                <input type="text" name="exp" value="{{exp}}" required="">
+                <label>Experience</label>
+            </div>
+            <input type="submit" name="submit" value="predict" class="submitbtn" />
+        </form><br>
+        <h2>salary : {{predicted}}</h2>
+    </div>
+</body>
+
+</html>-->
